@@ -9,6 +9,16 @@ class my_vector : public my_container<T>
 public:
     // default constructor
     my_vector() ;
+	my_vector(my_vector<T> &a ) 
+	{
+		_size = a._size;
+		for(int i=0;i<_size;i++)
+		{
+			vc[i] = a.vc[i];
+		}
+
+	}
+
 
 	void add(const T& __x) override;
 	void pop_back() override ;
