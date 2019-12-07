@@ -3,6 +3,7 @@
 template<class T>
 void my_vector<T>:: add(const T& __x) 
 {
+	std::cout<<"my_vec add\n";
 	_size += 1;
 	T *tmp = new T[_size];
 	for (int l=0;l<_size;l++)

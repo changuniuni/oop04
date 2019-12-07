@@ -28,6 +28,11 @@ public:
 	const T& operator [](const unsigned int __pos) const override ;
 	T* begin() const override ;
 
+	~my_vector() override {
+	for(int i=0;i<_size;i++)
+		std::cout<<vc[i]<<'\n';
+	
+	}
 private:
 		unsigned int _size=0;
 		T *vc= new T[_size];

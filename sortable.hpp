@@ -9,6 +9,7 @@ class sortable
 protected:
     void sort(T* first, T* last) {
         std::sort(first, last);
+		std::cout<<"******************sort\n";
     }
 };
 
