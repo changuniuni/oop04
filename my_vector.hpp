@@ -27,6 +27,7 @@ public:
 	unsigned int size() const override ;
 	const T& operator [](const unsigned int __pos) const override ;
 
+
 	T* begin() const override ;
 	T* end() const;
 	~my_vector() override {
