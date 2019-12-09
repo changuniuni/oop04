@@ -9,7 +9,10 @@ class my_vector : public my_container<T>
 public:
     // default constructor
     my_vector() ;
-	my_vector(my_vector<T> &a ) 
+
+
+
+	my_vector(my_vector &a ) 
 	{
 		_size = a._size;
 		for(int i=0;i<_size;i++)
