@@ -42,13 +42,15 @@ T* my_vector<T>::begin() const
 }
 
 template<class T>
+T* my_vector<T>::end() const
+{
+	return vc+_size;
+}
+
+
+template<class T>
 void my_vector<T>::swap(my_container<T>&c)
 { 
-
-
-
-
-
 }
 
 
